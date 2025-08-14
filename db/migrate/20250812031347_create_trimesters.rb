@@ -7,6 +7,6 @@ class CreateTrimesters < ActiveRecord::Migration[8.0]
 
       t.timestamps
     end
-    add_index :trimesters, [:name, :start_date], unique: true
+    add_index :trimesters, [ :name, :start_date ], unique: true
   end
 end
